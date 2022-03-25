@@ -1,9 +1,11 @@
 package com.tcs.crs.model;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student  implements Serializable {
 
 	
-	private int id;
+	private long id;
 	private String firstName;
 	private String lastName;
 	private String emailId;
@@ -32,15 +34,15 @@ public class Student {
 	/**
 	 * @return the id
 	 */
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param l the id to set
 	 */
-	public void setId(int id) {
-		this.id = id;
+	public void setId(long l) {
+		this.id = l;
 	}
 
 	/**

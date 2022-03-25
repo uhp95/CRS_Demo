@@ -3,30 +3,37 @@ package com.tcs.crs.model;
 public class Grades {
 	
 	private float grade;
-
-	public Grades(float grade) {
+	private int studentId;
+	
+	
+	public Grades(float grade, int studentId) {
 		super();
 		this.grade = grade;
+		this.studentId = studentId;
 	}
-	
+
 	public Grades()
 	{
 		
 	}
 
-	/**
-	 * @return the grade
-	 */
 	public float getGrade() {
 		return grade;
 	}
 
-	/**
-	 * @param grade the grade to set
-	 */
 	public void setGrade(float grade) {
 		this.grade = grade;
 	}
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+	
+	
 	
 	
 
